@@ -11,6 +11,8 @@
     z-index: 444;
 }
 
+
+
 .nav-link:hover{
     color: orangered;
 }
@@ -569,6 +571,18 @@
     .carfleet-text{
         width: 75%;
     }
+
+    .mobile-navbar{
+   
+       background: rgb(255 237 234);
+          text-align: center;
+          top: 10px;
+          padding: 30px;
+      }
+      
+      .mobile-navbar a{
+          /* color: #fff; */
+      }
     }
 
     @media  (min-width: 320px) and (max-width: 768px){
