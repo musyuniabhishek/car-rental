@@ -1,0 +1,604 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+}
+.navbar-bg{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 444;
+}
+
+.nav-link:hover{
+    color: orangered;
+}
+.nav-link{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+.nav-item .active{
+    color: orangered !important;
+}
+
+.hero-container{
+    margin-top: 50px;
+}
+.hero-content{
+    position: relative;
+    width: 100%;
+}
+
+.hero-text{
+    max-width: 30rem;
+    margin-top: 8rem;
+    z-index: 3;
+}
+
+.hero-text>h5{
+    font-size: 28px;
+    font-weight: 700;
+}
+.hero-text>h1{
+    font-size: 50px;
+    font-weight: 800;
+    >span{
+        color: orangered;
+    }
+}
+.hero-text>p{
+    font-size: 17px;
+}
+
+.hero-btn>.btn1{
+    background-color: orangered;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+.hero-btn>.btn1:hover{
+    box-shadow: 0 10px 15px 0 rgba(255,83,48,.6)
+}
+.hero-btn>.btn2{
+    background-color:#000;
+    border: 2px solid #000;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+.hero-btn>.btn2:hover{
+    background-color: #fff;
+    color: #000;
+    
+}
+
+.hero-img{
+    position: absolute;
+    width: 70%;
+    right: -40px;
+   top:10px;
+   z-index: 2;
+   animation-name: example;
+   animation-duration: 2s;
+}
+.hero-bg{
+    position: absolute;
+    right: 0px;
+    z-index: 0;
+}
+
+.booking-container {
+    margin-top: 200px;
+}
+
+.car-book{
+    z-index: 4;
+    position: relative;
+    margin-top: 70px;
+    padding: 30px;
+    box-shadow: 2px 2px 10px #0000004a;
+    border-radius: 10px;
+}
+.label{
+    font-size: 18px;
+    font-weight: 700;
+}
+.searchBtn{
+    margin: 58px 0 ;
+}
+
+.plan-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.box{
+    width: 280px;
+    text-align: center;
+    margin: 10px 0;
+    >img{
+        height: 175px;
+        width: 175px;
+    }
+    >h4{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    >p{
+        color: #0000008a;
+        font-weight: 400;
+    }
+}
+.plan-text{
+    margin: 15px 0;
+    >p{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    >h3{
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
+
+.carfleet-text{
+    padding-inline: 60px;
+    margin-bottom: 10px;
+    width: 50%;
+    >h6{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    >h4{
+        font-size: 45px;
+        font-weight: 700;
+    }
+    >p{
+        color: #00000099;
+    }
+}
+.banner{
+    background-color: #000000e6;
+    >h2{
+        font-size: 55px;
+        font-weight: 600;
+    }
+    >p{
+        margin-top: 10px;
+        font-size: 30px;
+        font-weight: 600;
+        >span{
+            color: orangered;
+        }
+    }
+    
+}
+
+.testimonials{
+    background-color: #00000008;
+}
+.testimonials-header{
+    width: 50%;
+    >h6{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    >h3{
+        font-size: 55px;
+        font-weight: 700;
+    }
+    >p{
+        color: #0000009a;
+    }
+}
+.client-box{
+    padding: 30px 60px;
+    background: #fff;
+    box-shadow: 5px 5px 10px #00000010;
+    >p{
+        font-size: 28px;
+        font-weight: 500;
+    }
+    >.client-name{
+        width: 75%;
+        >img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+        }
+        >.text{
+            >h5{
+                font-size: 22px;
+                font-weight: 600;
+            }
+            >p{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.appbanner{
+    background-image: url("./assets/images/playstorebg.png");
+    padding: 30px 40px;
+    
+}
+.appbanner .text{
+    width: 50%;
+     >h2{
+         font-size: 55px;
+         font-weight: 700;
+     }
+     >p{
+         font-size: 20px;
+         color: #0000008a;
+     }
+ }
+ .download-btn{
+    flex-wrap: wrap;
+    gap: 10px;
+ }
+
+ .content ul{
+    list-style-type: none;
+    >li:nth-child(1){
+        font-size: 24px;
+        >span{
+            font-weight: 600;
+        }
+    }
+    >li:nth-child(2){
+        font-size: 18px;
+        color: #0000008a;
+    }
+    >li:nth-child(3){
+        font-size: 20px;
+    }
+    >li:nth-child(4){
+        font-size: 20px;
+    }
+ }
+
+ .content ul a{
+    text-decoration: none;
+    color: #000;
+ }
+
+ .content-2 ul{
+    list-style-type: none;
+    >li:nth-child(1){
+        font-size: 24px;
+        font-weight: 600;
+        color: #000;
+    }
+    >li{
+        font-size: 16px;
+        color: #0000008a;
+        >input{
+            background: #0000002f;
+            padding: 10px 60px;
+            border: none;
+            font-size: 16px;
+            width: 100%;
+        }
+        >button{
+            background-color: orangered;
+            color: #fff;
+            width: 100%;
+            padding: 10px 20px;
+        }
+    }
+    
+ }
+.carfleet-img{
+    width: 90%;
+    height: 92%;
+    padding: 5px;
+    >img{
+        filter: drop-shadow(2px 5px 10px rgba(22, 22, 22, 0.478));
+    }
+}
+
+.list-group{
+    >button{
+        padding: 15px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        border: none;
+        background-color: #6b6b6b2b;
+    }
+    .active{
+        background-color: orangered !important;
+        color: white;
+    }
+}
+.carfleet-table tr {
+    border: 2px solid #fff;
+    >th,td{
+        padding:  12px;
+        text-align: center;
+        background-color: #aeadad4a;
+    }
+    >.price{
+        background-color: orangered;
+        color: #fff;
+        >span{
+            font-size: 25px;
+            font-weight: 800;
+        }
+    }
+    >th>button{
+        background-color: orangered;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+    }
+    
+}
+
+/* --------breadcrumb -------------- */
+
+.bg-breadcrumb{
+    background-image: url("./assets/images/breadcrumb.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+}
+.breadcrumb-wrapper{
+    background-color: #ffffffe2;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.breadcrumb-text{
+    color: #010103;
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+    gap: 10px;
+    >h3{
+        font-size: 42px;
+        font-weight: 800;
+    }
+    >p{
+        font-size: 20px;
+        font-weight: 600;
+        >a{
+        text-decoration: none;
+        color: #000;}
+    }
+}
+
+/* ---------Our team ---------- */
+
+.team-box{
+    box-shadow: 5px 5px 20px #00000029;
+    >.team-img{
+        background-color: #3332321a;
+        >img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    >.team-text{
+        padding: 20px 10px;
+        >h3{
+            font-size: 25px;
+            font-weight: 600;
+            margin: 0 !important;
+        }
+        >p{
+            color: #00000079;
+            font-weight: 600;
+            margin: 0 !important;
+        }
+    }
+}
+
+/* --------- contact -------- */
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 75%;
+    padding: 10px;
+    >h3{
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 4rem;
+    }
+    >p{
+        color: #00000065;
+        font-weight: 600;
+    }
+    >a{
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+.contact-form{
+    >form{
+        label{
+            font-weight: 700;
+            >b{
+                color: orangered;
+                font-size: 1.3rem;
+            }
+        }
+            
+        input,textarea{
+                background-color: #44444413;
+                padding: 15px 25px;
+                font-weight: 600;
+                border: none;
+            }
+
+        button{
+            background-color: orangered;
+            color: #fff;
+            padding: 20px 2px;
+            box-shadow: 0 10px 15px 0 rgba(255,83,48,.35);
+        }
+        
+    }
+}
+
+/* ---------- about --------- */
+
+.about{
+    width: 80%;
+    margin: auto;
+    .about-img{
+        width: 100%;
+        >img{
+            width: 100%;
+        }
+    }
+    .about-text{
+        >h3{
+            font-weight: 600;
+        }
+        >h4{
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        >p{
+            color: #0000006b;
+            font-weight: 500;
+        }
+        >.about-logo{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: space-between;
+            >.logo-box{
+                width: 75px;
+                >img{
+                    width: 100%;
+                    height: 50px;
+                }
+                >.text{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    >h4{
+                        font-size: 2.5rem;
+                        font-weight: 700;
+                    }
+                    >p{
+                       color: #00000077;
+                       font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ------------ vehicle ---------- */
+
+.vehicle-box{
+    border: 1px solid #00000031;
+    box-shadow: 2px 2px 10px #6665656e;
+}
+.vehicle-img{
+    width: 100%;
+    height: 100%;
+    >img{
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 3/2;
+    }
+}
+.vehicle-details{
+    padding: 10px 25px;
+    >button{
+        background-color: orangered;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 10px 5px;
+    }
+}
+.main-box{
+    display: flex;
+    justify-content: space-between;
+    >h3{
+        font-weight: 800;
+    }
+    >p{
+        color: #00000075;
+        font-weight: 600;
+        >span{
+            color: #000;
+            font-size: 20px;
+        }
+    }
+}
+.extra-box{
+    display: flex;
+    justify-content: space-between;
+    >p{
+        color: #00000075;
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+ @media  (min-width: 320px) and (max-width: 991px){
+    .appbanner .text{
+        width: 100%;
+    }
+    .client-box{
+        padding: 30px;
+        >.client-name{
+            width: 100%;
+        }
+    }
+    .carfleet-text{
+        width: 75%;
+    }
+    }
+
+    @media  (min-width: 320px) and (max-width: 768px){
+        .testimonials-header{
+            width: 80%;
+            >h3{
+                font-size: 35px;
+            }
+        }
+        .appbanner .text{
+            >h2{
+                font-size: 40px;
+            }
+        }
+        .carfleet-text{
+            width: 95%;
+            padding-inline: 15px;
+        }
+        .about-logo{
+            flex-direction: column;
+            align-items: center;
+        }
+        .about-text h4{
+            font-size: 2.5rem !important;
+        }
+        
+        
+        }
+
+        @keyframes example {
+            from {right: -100px;}
+            to {right: -40px}
+          }
